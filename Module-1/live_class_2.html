@@ -1,0 +1,159 @@
+
+
+<script>
+    // Age Function make korte hobe tarpor function ke call korte hobe .
+
+    // Regular function 
+    function login(){
+        document.write("Login success")
+    }
+
+    // Array function 
+    login1=()=>{
+        document.write("Login success"); 
+    }
+
+
+    // Async Regular function 
+    async function button1 (){
+        await document.write("This is button 1")
+    }
+
+
+    // Async Array function --- Function a async use kora hoi function er execution complate korar jonno .
+    button2 = async () => {
+        await document.write("This is button 2")
+    }
+
+
+// Paramitar function 
+// Pramitr and Argument Same 
+function button3 (a, b){
+    document.write(a+b)
+}   
+// button1 (5, 12);  
+
+
+
+// Default Parameters
+function myFunction(x, y) {
+    if (y === undefined) {
+            y = 2;
+        }  
+        return x * y;
+}
+   
+const funResult = myFunction(5)
+// document.write(funResult); Ans: 10 
+ 
+
+
+function myFunction(x, y = 10) {
+  return x + y;
+}
+myFunction(5); // Ans: 15 
+
+
+
+
+
+    // Rest Paramitar function 
+    function button3 (...a){
+        document.write(a)
+    }
+    // button3 (5, 12, 55, 60, 58, 66, 99);
+
+
+
+    // Return function 
+    // Je function ja return kore si function tar soman 
+    function result (a, b) {
+        // ei function akta result return kore
+        return a+b;
+    }
+
+    const assignment = 10;
+    const total = result(55, 25 ) + assignment ;
+    // document.write(total) ;
+
+
+
+
+    // IFF Function 
+    // IFF Function nije nije call hoi 
+    // Ei Function react a use kora hoi 
+    // JSX er vitor and hok er vitor use kora hoi 
+    (()=>{
+        // document.write("This is IFF Function ")
+    })();
+
+
+
+    // IFF Function Async
+    (async()=>{
+        // document.write("This is IFF Async Function ")
+    })();
+
+
+
+
+
+
+    // ======================================================= 
+    // Rest Paramitar function Sum 
+    function addNumbar (...numbars){ 
+        let sum = 0;
+        for (let num of numbars){
+            sum += num;
+        }
+        return sum;
+     }
+     const addResult = addNumbar(5, 4, 6, 5);
+    //  document.write(addResult) // Ans : 20 
+
+
+    function addNumbar1 (...numbars){ 
+        let sum = 0;
+        for (i=0; i<numbars.length; i++){
+            sum += numbars[i];
+        }
+        return sum;
+     }
+     const addResult2 = addNumbar1(5, 4, 6, 5,2);
+    //  document.write(addResult2)   // Ans : 22 
+
+
+
+    // Find High value in array
+    const numbers1 = [10, 5, 8, 20, 15];
+    const highestValue = Math.max(...numbers1);  // Ans: 20 
+
+
+    function findHighestValue(numbers) {
+    if (numbers.length === 0) {
+        return "List is empty";
+    }
+
+    // let highest = numbers[0];  // highest = 10; 
+    let highest = 0 ;
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > highest) {
+            highest = numbers[i];
+        }
+    }
+    return highest;
+}
+
+const numbers = [10, 5, 20, 8, 15];
+const result3 = findHighestValue(numbers) // Ans: 20
+document.write(result3) // Ans : 20;
+
+// ======================================================= 
+
+
+
+
+
+
+
+</script>

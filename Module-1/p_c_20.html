@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>For In Loop Over Object </h4>
+
+    <!-- For In Loop Array $ Object er uppor chole -->
+
+
+    <script>
+
+        // Kono kichor boisisto ke Object bole .
+        var myPc = {
+            breand: "Walton",
+            color: "Golden", 
+            isLaptop: true, 
+            price: 20000,
+            screen: "15.6"
+        }
+
+        //  .write(myPc["breand"] + "</br>");
+        // document.write(myPc.price);
+
+        for ( let item in myPc ) {
+
+            // const element = item ;
+            // document.write(item)
+
+            // const element = myPc[item];
+            document.write( element + "</br>");
+            
+        }
+
+
+    </script>
+</body>
+</html>

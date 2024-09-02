@@ -1,0 +1,186 @@
+<!-- String Methods  -->
+
+<!-- Index Number Start Hoi "0" Theke And Length Start Hoi "1" Theke .  -->
+
+<script>
+    // The charAt() method returns the character at a specified index (position) in a string.
+    // The index of the first character is 0, the second 1, ...
+    // koto index a kon element ace tha ber kora jai.
+    // index numbaer diye tar position er element baer kora jai.
+
+
+    const country = "BanglaDesh" ;
+    // --- Get the first character in a string:
+    // document.write(country.charAt(0))
+
+    // --- Get the second character in a string:
+    // document.write(country.charAt(1))
+
+    // --- Get the last character in a string: 
+    // document.write(country.charAt(country.length-1));
+
+
+
+
+    // The concat() method concatenates (joins) two or more arrays.
+    // The concat() method returns a new array, containing the joined arrays.
+    // The concat() method does not change the existing arrays.
+    // 2 ta variable ke othoba 2 array ke jora laganu jai.
+
+
+    var arr1 = "Bangla";
+    var arr2 = "Desh";
+    var arr3 = arr1.concat(arr2);
+    // document.write(arr3 + "</br>")
+
+
+    // Join two arrays:
+    const arr4 = ["Cecilie", "Lone"];
+    const arr5 = ["Emil", "Tobias", "Linus"];
+    const children = arr4.concat(arr5);
+    document.write(children + "</br>")
+
+
+
+
+
+
+
+// The indexOf() method returns the position of the first occurrence of a value in a string.
+// The indexOf() method returns -1 if the value is not found.
+// The indexOf() method is case sensitive.
+// Kono latter koto numbar index a ace tha ber kora jai .
+
+// Search a string for "welcome": 
+let text = "Hello world, welcome to the universe.";
+let result = text.indexOf("welcome");
+document.write(result + "</br>") // Ans: 13 
+
+
+// Find the first occurrence of "e":
+let text1 = "Hello world, welcome to the universe.";
+const result1 = text1.indexOf("e");
+document.write(result1 + "</br>")  // Ans : 1 
+
+// Not Find/ Not Exit Any Latter:
+let text2 = "Hello";
+const result2 = text1.indexOf("M");
+document.write(result2 + "</br>")  // Ans : -1 
+
+
+// Find the first occurrence of "e", starting at position 5:
+let text3 = "Hello world, welcome to the universe.";
+const result3 = text.indexOf("e", 5); // start at position 5 
+document.write(result3 + "</br>")  // Ans : 14 
+
+
+// Find the last occurrence of "e":
+let text4 = "Hello world, welcome to the universe.";
+const result4 = text.lastIndexOf("e");
+document.write(result4 + "</br>")  // Ans : 35 
+
+
+
+
+// JavaScript replace() //
+// Replace Je kono akta part ke replace kore dei 
+//  Syntax : string.replace(searchValue, newValue);
+
+let text5 = "Visit Microsoft!";
+let result5 = text5.replace("Microsoft", "W3Schools");
+document.write(result5 + "</br>")  // Ans: Visit W3Schools!
+
+
+
+// A global replacement: replace() searches a string for a value, and returns a new string with the specified value(s) replaced:
+let text6 = "Mr Blue has a blue house and a blue car";
+let result6 = text6.replace(/blue/g, "red"); // Her g holo = gloval
+document.write(result6 + "</br>")  // Ans: Mr Blue has a red house and a red car
+
+
+
+// JavaScript String substr() //
+// Koto Numbar index theke koita element cut hobe tha bole dewya hoi . 
+// Koto Numbar index theke cuta soru korbo and koita element cut hobe tha bole dewya hoi . 
+// cut kore new variable make kore . 
+// Syntax : string.substr(start, length);
+// The substr() method extracts a part of a string.
+// The substr() method begins at a specified position, and returns a specified number of characters.
+// The substr() method does not change the original string.
+
+
+// Extract a substring from text:
+let text7 = "Hello world!";
+let result7 = text7.substr(0, 5)
+let result8 = text7.substr(6, 5)
+let result9 = text7.substr(6)
+document.write(result7 + "</br>")  // Ans: Hello 
+document.write(result8 + "</br>")  // Ans: world 
+document.write(result9 + "</br>")  // Ans: world! 
+
+
+
+
+
+
+// JavaScript String substring()  // 
+// Koto Numbar Index theke cuta soru hobe and koto numbar length porjontho cute hobe tha bole dite hobe.
+// Length start hoi (1) Theke and Index start hoi (0) theke 
+// Syntax : string.substring(start, end)
+// cut kore new variable make kore . 
+
+let text11 = "Hello world!";
+let result11 = text11.substring(0, 5);
+let result12 = text11.substring(6, 13);
+let result13 = text11.substring(6);
+document.write(result11 + "</br>")  // Ans: Hello 
+document.write(result12 + "</br>")  // // Ans: world! 
+document.write(result13 + "</br>")  // // Ans: world! 
+
+
+
+
+
+// JavaScript String slice() //
+// substring() And slice() Same kaj kore 
+// Koto Numbar Index theke cuta soru hobe and koto numbar length porjontho cute hobe tha bole dite hobe.
+// Length start hoi (1) Theke and Index start hoi (0) theke 
+// Syntax : string.substring(start, end)
+// cut kore new variable make kore . 
+
+let text14 = "Hello world!";
+let result14 = text14.slice(0, 1); 
+document.write(result14 + "</br>")  // // Ans: H 
+
+
+
+ // String toUpperCase() //
+
+let text15 = "Hello World!";
+let result15 = text15.toUpperCase();
+let result16 = text15.toLowerCase();
+let result17 = text15.toLocaleUpperCase();
+
+document.write(result15 + "</br>")  // // Ans: HELLO WORLD!
+document.write(result16 + "</br>")  // // Ans: hello world!
+document.write(result17 + "</br>")  // // Ans: HELLO WORLD
+
+
+
+
+
+// String trim() // 
+// The trim() method removes whitespace from both sides of a string.
+// The trim() method does not change the original string.
+
+
+// Remove spaces with trim():
+let text18 = "       Hello World!        ";
+let result18 = text18.trim();
+document.write(text18.length + "</br>")  // Ans: 27 
+document.write(result18.length + "</br>")  // Ans: 12 
+
+
+
+
+</script>

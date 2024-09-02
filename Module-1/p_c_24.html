@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h4>Array ForEach Method</h4>
+
+
+
+
+    <script>
+
+        // ForEatch LOOP er moto kaj kore . 
+        // Array teke akta akta element ke dore niye aste cile ForEtch use kora hoi. 
+        
+        
+        const numbers = [65, 44, 12, 4, 100];
+        numbers.forEach(function(item) {
+            // document.write(item + "</br>");
+        });
+
+
+
+
+
+        // Compute the sum: 
+        let sum = 0; 
+        const numbers1 = [2, 2, 3, 4, 5];
+        const result = numbers1.forEach(function(item){
+            
+            sum += item;
+            // document.write(sum + "</br>");
+
+
+            // console.log(sum += item)
+            
+        });
+
+
+
+
+
+
+
+
+        // Multiply each element: Array er protita element ke change kora 
+        const numbers3 = [5, 2, 3, 4];
+        numbers3.forEach(function(item, index, arr){
+            // numbers3[index] = item * 2;
+            arr[index] = item * 2;
+            
+        });
+
+        document.write(numbers3  + "</br>")
+
+        
+
+        
+        
+        </script>
+</body>
+</html>

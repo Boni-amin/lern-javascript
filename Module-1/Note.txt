@@ -1,0 +1,61 @@
+## Module er pre-record Class Topic list ---
+
+1. JS Introduction 
+2. Hello JavaScript
+3. JS Comment - Code er vitor message dewya .
+4. JS Variable 
+5. Non Primitive data type -- object , arry , RegExp 
+6. Introduce With Operator 
+    * Arithmetic operators 
+    * Assignment operators
+    * Comparison operators
+    * Logical operators
+    * String operators
+    * Relational operators
+7.  If Else Statement
+    *  If Statement -- akta sortho hole
+    *  If Else Statement --- sortho 2 hole
+    *  If Else if Statement -- sortho 2 er besi hole
+
+8. Switch Case 
+9. Js loop 
+    * For loop  
+    * For In loop
+    * While Loop
+    * Do While Loop 
+9. Basic for loop 
+11. While Loop 
+12. do while loop 
+13. JavaScript Function 
+    * Code Reusability
+    * Code less
+    * Easy to understand 
+
+14. Function Parameter 
+15.  Function Return 
+16. JavaScript Object 
+17. JavaScript Array 
+18. For Loop Over Array 
+19. For In Loop Over Array 
+20. For In Loop Over Object 
+21. Array Concate And Array Form 
+22. Array Filter 
+23. Array Find And Find Index 
+24. Array ForEach Method
+25. Array Includes And IndexOf
+26. Array Pop Push Reverse 
+27. Array Slice And Sort
+28. Array splice 
+29. String Methods
+32. JavaScript Date Object
+33. JavaScript Math Object 
+34. JavaScript Numbers 
+
+
+
+
+
+
+
+
+
